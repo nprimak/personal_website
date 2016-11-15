@@ -1,0 +1,139 @@
+// bower:scss
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+$width: 400px;
+$round-corner: 6px;
+$tile-count: 4;
+$tile-padding: 15px;
+$font-size: 2.5em;
+$tile-radius: 6px;
+$transition-time: 170ms;
+$tile-size: ($width - $tile-padding * ($tile-count + 1)) / $tile-count;
+$colors:  #EEE4DA, // 2
+          #EAE0C8, // 4
+          #F59563, // 8
+          #3399ff, // 16
+          #ffa333, // 32
+          #cef030, // 64
+          #E8D8CE, // 128
+          #990303, // 256
+          #6BA5DE, // 512
+          #DCAD60, // 1024
+          #B60022; // 2048
+
+//power() mixin
+@function power ($x, $n) {
+  $ret: 1;
+   @if $n >= 0 {
+     @for $i from 1 through $n {
+       $ret: $ret * $x;
+     }
+   } @else {
+     @for $i from $n to 0 {
+       $ret: $ret / $x;
+     }
+   }
+
+  @return $ret;
+}
+
+@mixin border-radius($radius: 3px) {
+  border-radius: #{$radius};
+  -moz-border-radius: #{$radius};
+  -webkit-border-radius: #{$radius};
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($value...) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+body{
+  color: #776E65;
+  font-family: "Open Sans", "HelveticaNeue", Arial, sans-serif;
+}
+
+
+
+#game {
+  position: relative;
+  width: $width;
+  height: $width;
+  background: #bbaaa0;
+  border-radius: $round-corner;
+  box-sizing: border-box;
+  padding: $tile-padding;
+
+    .grid-container {
+      position: absolute;
+      z-index: 1;
+      margin: 0 auto;
+
+        .grid-cell {
+          width: $tile-size;
+          height: $tile-size;
+          float:left;
+          margin-bottom: $tile-padding;
+          margin-right: $tile-padding;
+          @include border-radius($tile-radius);
+          background: rgba(238,228,218,.35)
+        }
+    }
+
+  .tile-container {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+
+      .tile {
+        width: $tile-size;
+        height: $tile-size;
+        line-height: floor($tile-size);
+        position: absolute;
+        text-align: center;
+        font-size: $font-size;
+        font-weight: bold;
+        @include border-radius($tile-radius);
+        @include transition($transition-time ease-in-out);
+        // @include transition-property(transform);
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        transition-property: transform;
+
+
+        //Dynamically create .position-#{x}-#{y} classes to mark where tiles are placed
+        @for $x from 1 through $tile-count {
+          @for $y from 1 through $tile-count {
+            $zeroOffsetX: $x - 1;
+            $zeroOffsetY: $y - 1;
+            $newX: ($tile-size) * ($zeroOffsetX) + ($tile-padding * $zeroOffsetX);
+            $newY: ($tile-size) * ($zeroOffsetY) + ($tile-padding * $zeroOffsetY);
+
+            &.position-#{$zeroOffsetX}-#{$zeroOffsetY} {
+              @include transform(translate($newX, $newY));
+            }
+          }
+        }
+
+        //Dynamically set the colors based on the number on the tile instance
+        @for $i from 1 through length($colors) {
+          &.tile-#{power(2, $i)} .tile-inner {
+            background: nth($colors, $i)
+          }
+        }
+
+      }
+
+  }
+
+}

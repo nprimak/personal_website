@@ -1,0 +1,10 @@
+<div id="content" ng-controller="GameController as ctrl">
+    <!-- Now the variable: ctrl refers to the GameController -->
+    <div id="heading" class="row">
+        <h1 class="title">ng-2048</h1>
+    </div>
+    <!-- instructions -->
+    <div id="game-container">
+        <div grid ng-model="ctrl.game" class="row"></div>
+    </div>
+</div>
