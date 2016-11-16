@@ -1,11 +1,9 @@
-// Import Bootstrap Compass integration
-@import "bootstrap-compass";
+
+// Import bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
-
-// Import Bootstrap for Sass
-@import "bootstrap";
 
 // Import Custom SCSS
 @import "custom";
@@ -267,7 +265,7 @@ a {
     color: #fff;
     padding: 50px;
     min-height: 400px;
-    background-image: image-url("../img/nprimak.jpg");
+    background-image: url("../img/nprimak.jpg");
     background-attachment: fixed;
     
     @media(min-width:900px) {
@@ -277,7 +275,7 @@ a {
     @media(max-width:450px) {
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: image-url("../img/nprimak-mobile.jpg");
+        background-image: url("../img/nprimak-mobile.jpg");
         
         h2 {
             font-size: 20px;

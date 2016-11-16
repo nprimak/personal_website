@@ -12,8 +12,8 @@
     <title>Nadya Primak | User Interface Developer + Empathy Engineer</title>
 
     <!-- Custom CSS -->
-    <link href="stylesheets/styles.css" rel="stylesheet">
-    <link href="stylesheets/custom.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -82,7 +82,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Nadya Primak</h1>
                         <p class="intro-text">User Interface Developer &amp; Empathy Engineer</p>
-                        <a href="#portfolio" class="btn btn-circle page-scroll">
+                        <a href="#work" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -92,11 +92,12 @@
     </header>
     
      <!-- Work Grid Section -->
-    <section id="work">
+    <section id="work" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Work</h2>
+                    <span>I got paid to do this stuff.</span>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -108,7 +109,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/work/semoss/legato_screenshot_3.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/work/legato_screenshot_3_cropped.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -118,7 +119,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/work/label-insight/screenshot_1.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/work/label-insight-cropped.png" class="img-responsive" alt="">
                         
                     </a>
                 </div>
@@ -137,11 +138,12 @@
     </section>
 
      <!-- Play Grid Section -->
-    <section id="play">
+    <section id="play" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Play</h2>
+                    <span>It's so much fun I do it for free.</span>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -153,7 +155,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/play/box-shooter-2.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/play/box-shooter-2-cropped.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -163,7 +165,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/play/roller-madness.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/play/roller-madness-cropped.png" class="img-responsive" alt="">
                         
                     </a>
                 </div>
@@ -181,12 +183,13 @@
         </div>
     </section>
 
-     <!-- Play Grid Section -->
-    <section id="learn">
+     <!-- Learn Grid Section -->
+    <section id="learn" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Learn</h2>
+                    <span>What I do when I'm not working or playing.</span>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -208,7 +211,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/learn/react-notesboard.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/learn/react-notesboard-cropped.jpg" class="img-responsive" alt="">
                         
                     </a>
                 </div>
@@ -219,7 +222,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/learn/app-prototype/1.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/learn/prototype_cropped.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -281,6 +284,116 @@
     
     
     <!-- Work Modals -->
+
+    <div class="portfolio-modal modal fade" id="workModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Data Visualization for Auditors</h2>
+                            <hr class="star-primary">
+                            <p>I was hired through Nolij Consulting to work on customizing an open source data visualization application built with Angular for a client catering to auditors.
+                            Semoss is an extremely robust data visualization engine where any kind of data can be plugged in and turned in dozens of different visualization types.</p>
+                            <p>Besides reskinning Semoss for the client, the auditors wanted to have their data all in once place, rather than having different data sets for each visualization. This required
+                            significant refactoring, because it also meant each visual would be cloned from the master. Some of the other capabilities of Semoss include keeping track of each process the user executes,
+                            having multiple sheets per workspace and multiple visualizations per sheets. Not to mention the large number of widget handles, which allow users to do all sorts of tasks such as adding comments
+                            to their visualization, change the colors, save, and publish. </p>
+
+                            <img src="img/portfolio/work/semoss/legato_screenshot_1.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/legato_screenshot_2.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/legato_screenshot_3.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/legato_screenshot_4.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/legato_screenshot_5.jpg" class="img-responsive img-centered" alt="">
+
+                            <p>I had a lot of say in how the user interface was implemented, and was responsible for making a number of mockups and presenting them to the client. I used Balsamiq to
+                            create drafts of how the Master Dataset might look, how the user could potentially choose to clone their visuals, and more. With so much going on in the page, it was important
+                            to try to make the interface as simple and unobtrusive as possible. You can see some of these mockups below. </p>
+
+                            <img src="img/portfolio/work/semoss/mockup_1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/mockup_2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/mockup_3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/semoss/mockup_4.png" class="img-responsive img-centered" alt="">
+
+                            <ul class="list-inline item-details">
+                                <li>Project Type:
+                                    <strong>Client Project
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>August 2016 - November 2016
+                                    </strong>
+                                </li>
+                                <li>Skills:
+                                    <strong>Angular, Data Visualization, D3
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="workModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Label Insight</h2>
+                            <hr class="star-primary">
+                            <p>I worked for Label Insight for one year, where I became familiar with a number of their angular applications. Label Insight is a start up that processes and stores giant amounts of data
+                            for grocery retailers and food distributors. However, their ultimate goal is to bring all this data to the public to provide transparency around their food products. </p>
+                            <p>During my time at Label Insight I worked on many different projects, from responsive bar charts to browser compatability to entire new angular apps
+                                for data quality assurance to be used by our internal team. Working with huge datasets was an everyday affair at Label Insight, and so I had to learn
+                                how to process REST API's and create pages dynamically on the fly based on that data. I often juggled programming and CSS tasks, depending on the priorities for the week.</p>
+                            <img src="img/portfolio/work/label-insight/1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/4.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/5.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/6.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/7.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/8.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/label-insight/9.png" class="img-responsive img-centered" alt="">
+
+                            <ul class="list-inline item-details">
+                                <li>Project Type:
+                                    <strong>Client Project
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>August 2015 - September 2015
+                                    </strong>
+                                </li>
+                                <li>Skills:
+                                    <strong>Mobile Design, Illustrator, Xcode
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="workModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -295,11 +408,11 @@
                         <div class="modal-body">
                             <h2>Mobile App Prototype</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/stella-nova/launchimage_icons.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/stella-nova/launchimage_icons.png" class="img-responsive img-centered" alt="">
                             <p>I was contracted by Anheuser-Busch to work on a rabid mobile app prototype with a team of developers. My contribution was primarily UX/UI mockups and programming design tweaks in Xcode. I created the launch image, icons, and overall look and feel of the app. Having no knowledge of Xcode prior to this project, I had to learn on the fly. </p>
-                            <img src="img/portfolio/stella-nova/screenshot1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/stella-nova/screenshot1.png" class="img-responsive img-centered" alt="">
                             <p>The goal of the prototype was to be functional enough to pass on to Anheuser-Busch's internal team of developers. The primary goal of the app was to keep track of liquor licensed bars and restaurants interested in the new Stella Nova Draught countertop bar solution, for marketing purposes. Content is blurred for disclosure policy reasons.</p>
-                            <img src="img/portfolio/stella-nova/screenshot2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/work/stella-nova/screenshot2.png" class="img-responsive img-centered" alt="">
                             <p>One of the biggest challenges of the project was not just learning the Xcode interface, but learning the Swift coding language in order to manipulate elements of the app that were difficult to change with the visual drag and drop editor. </p>
                              
                         
@@ -326,6 +439,97 @@
     </div>
 
     <!-- Play Modals -->
+
+    <div class="portfolio-modal modal fade" id="playModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Box Shooter</h2>
+                            <hr>
+                            <img src="img/portfolio/play/box-shooter-2.png" class="img-responsive img-centered" alt="">
+                            </br></br>
+                            <p>Like Roller Madness, this game was built in part while taking a class on Coursera taught by the University of Michigan. Using Unity, I built my first shooter game
+                            where the player's goal is to get as high of a score as possible by shooting the green squares for points and the white squares to increase their time limit. Also similar to Roller Madness, I created Level 1
+                            while following along with the Course material and Level 2 I made it more difficult by increasing the range of distance, making the score boxes move faster, making the yellow boxes which cause you to lose time closer and bigger, and
+                            finally making the white squares which gain the player more time smaller and farther away.</p>
+                            <a href="apps/box_shooter/index.html" class="btn btn-lg btn-inverse h1">Play Now</a>
+                            </br></br>
+                            </br></br>
+                            <img src="img/portfolio/play/box-shooter.png" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                                <li>Project Type
+                                    <strong>Unity, Coursera Game Design Certification
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>October 2016
+                                    </strong>
+                                </li>
+                                <li>Skills:
+                                    <strong>Unity
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="playModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Roller Madness</h2>
+                            <hr>
+                            <img src="img/portfolio/play/roller-madness.png" class="img-responsive img-centered" alt="">
+                            <a href="apps/roller_madness/index.html" class="btn btn-lg btn-inverse h1">Play Now</a>
+                            </br></br>
+                            <p>I had wanted to learn Unity for a long time but hadn't taken the plunge until this Coursera certification, taught by University of Michigan came around. This was the first game I made,
+                            where Level 1 was primarily following along with the instructor while Level 2 is of my own design. You control the ball with the arrow keys and must avoid falling off the edges or into the holes in the ground.
+                            Don't forget to stay away from the squares that are chasing you! Oh, and try to collect as many coins as you can. That is pretty important too.</p>
+                            <img src="img/portfolio/play/roller-madness-2.png" class="img-responsive img-centered" alt="">
+
+                            <ul class="list-inline item-details">
+                                <li>Project Type
+                                    <strong>Coursera Game Design Class
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>October 2016
+                                    </strong>
+                                </li>
+                                <li>Skills:
+                                    <strong>Unity
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="playModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -340,14 +544,14 @@
                         <div class="modal-body">
                             <h2>Hnefatafl</h2>
                             <hr>
-                            <img src="img/portfolio/hnefatafl/about.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/play/hnefatafl/about.png" class="img-responsive img-centered" alt="">
                             <a href="http://www.play-hnefatafl.com" class="btn btn-lg btn-inverse h1">Visit the Website</a>
                             </br></br>
                             <p>Hnefatafl is an ancient viking game that predates chess. Between jobs I was inspired to tackle an online version of the game when my fiancee sent me an article about it. Growing up I enjoyed chess and I always thought that if I could code a game I would have the confidence to enter the workforce as a programmer.</p>
                             <p>Friends can also play against each other on the same computer, and the interface is very similar. When I looked at other developers who coded Hnefatafl for online play, I noticed that the game board was very small and it was difficult for beginner players to know where their pieces can move. Since this is not a mainstream game like chess, I felt it was especially important to include that feature. </p>
-                            <img src="img/portfolio/hnefatafl/game.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/play/hnefatafl/game.png" class="img-responsive img-centered" alt="">
                             <p>The most challenging aspect of the project was understanding AJAX calls and the tedious testing to make sure both users would see the same game board when playing against each other online. However, it was the last step and I was more than happy to devote those extra hours after experiencing the delight of seeing the pieces move and respond to user interactions.</p>
-                            <img src="img/portfolio/hnefatafl/rules.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/play/hnefatafl/rules.png" class="img-responsive img-centered" alt="">
                             <p>Since posting the game online I have received many more hits than I was expecting, as many as 70,000 per month. For such an unusual game that few people have ever heard of, I consider this a success. It was a very fun project for me to tackle.</p>
                             
                             <ul class="list-inline item-details">
@@ -387,20 +591,20 @@
                         <div class="modal-body">
                             <h2>JIRA Responsive Redesign</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/jira/wireframe2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/jira/wireframe2.png" class="img-responsive img-centered" alt="">
                             <p>For my Information Design class as part of my Interaction Design certification, I was tasked to redesign a website of my choice, first making wireframes and then expanding upon them to create the responsive layouts. These included the usual mobile, tablet, and desktop layouts as well as some futuristic layouts (wall, watch). </p>
-                            <img src="img/portfolio/jira/dashboard.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/jira/dashboard.png" class="img-responsive img-centered" alt="">
                             <p>I chose JIRA because I've been working in it everyday for several months now and I find it very unintuitive to use. I think by trying to pack it with every feature they could think of JIRA cluttered up their web app and made it difficult to navigate. So in my designs I tried to simplify things a bit while also holding on to the crucial features that I use on a daily basis in the app.           </p>
-                             <img src="img/portfolio/jira/phone_explanation.png" class="img-responsive img-centered" alt="">
+                             <img src="img/portfolio/learn/jira/phone_explanation.png" class="img-responsive img-centered" alt="">
                             <p>For example, on the mobile app JIRA keeps a lot of the project management features that I think are too complex to execute and navigate on a phone. Also because of that, the crucial ticket and task navigation became harder to find as well. So in my mobile mockup, I focused entirely on improving the display of the tickets and how that could be simplified compared to the current JIRA website.</p> 
-                                <img src="img/portfolio/jira/laptop.png" class="img-responsive img-centered" alt="">
+                                <img src="img/portfolio/learn/jira/laptop.png" class="img-responsive img-centered" alt="">
                             <p>I initially thought it would be too much of a stretch for users to engage with JIRA on a watch or an interactive wall. However, once I really had to start thinking about a design, I realized that a wall could allow for much better improved team meetings if everyone could see their tickets in huge font across the room and literally drag their tickets across the screen when they want to assign them to a user.
                             </p>
                             
-                            <img src="img/portfolio/jira/wall.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/jira/wall.png" class="img-responsive img-centered" alt="">
                             <p>I ultimately ended up changing my mind about the watch as well. While perhaps a watch like the FitBit wouldn't prove much use, a watch the size of an Apple Watch could quickly notify users of new comments and other such minutae that users can easily stay connected without having to constantly check their phone. 
                             </p>
-                            <img src="img/portfolio/jira/watch_face2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/jira/watch_face2.png" class="img-responsive img-centered" alt="">
                             <ul class="list-inline item-details">
                                 <li>Project Type:
                                     <strong>Specialization Assignment
@@ -453,6 +657,56 @@
                                 </li>
                                 <li>Skills:
                                     <strong>React, Javascript
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="learnModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mobile App Prototype</h2>
+                            <hr class="star-primary">
+                            <p>As someone who entered the software engineering realm with some design and javascript experience but very little knowledge of user interface design,
+                            I felt that it was very important for me to start learning how to design better user interfaces. I decided to enroll in a series of Coursera courses (UC San Diego) teaching Interaction Design,
+                            which promised to cover user research, user focused design principles, and more. </p>
+                            <p>Writing out everything I gleaned from this class would take pages, but the class culminated in a capstone project where we had to design our own mobile app prototype. These steps included
+                            brainstorming to find a user need, drawing out storyboards to identify how the need would be met, sketching out a prototype, and finally making this prototype interactive and high fidelity through Invision.</p>
+                            <p>I have not completed the capstone portion of the course yet, but here is some of my work so far. I was specifically looking at the idea of finding yourself, whether by fulfilling dreams or helping work through the issues
+                            each individual faces. </p>
+                            <img src="img/portfolio/learn/app-prototype/5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/app-prototype/6.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/app-prototype/1.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/app-prototype/2.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/learn/app-prototype/3.jpg" class="img-responsive img-centered" alt="">
+
+
+                            <ul class="list-inline item-details">
+                                <li>Project Type:
+                                    <strong>Interaction Design Assignment
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>June 2016
+                                    </strong>
+                                </li>
+                                <li>Skills:
+                                    <strong>Prototyping, Brainstorming, Research
                                     </strong>
                                 </li>
                             </ul>
