@@ -5854,6 +5854,9 @@ button.close {
 @media (min-width: 767px) {
   .portfolio .portfolio-item {
     margin: 0 0 30px; } }
+@media (max-width: 767px) {
+  .about-section p {
+    font-size: 12px; } }
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
